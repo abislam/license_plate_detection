@@ -6,3 +6,15 @@ py -m scripts.label_image --graph=tf_files/retrained_graph.pb --input_height=128
 py -m scripts.label_image --graph=tf_files/retrained_graph.pb --input_height=128 --input_width=128 --image=test_files/indianaTest1.jpg
 
 py -m scripts.label_image --graph=tf_files/retrained_graph.pb --input_height=128 --input_width=128 --image=test_files/newYorkTest1.jpg
+
+
+
+tflite_convert --graph_def_file=tf_files/retrained_graph.pb --output_file=tf_files/retrained_graph.tflite --input_shape=1,128,128,3 --input_array=input --output_array=final_result --inference_type=FLOAT --input_data_type=FLOAT --enable_v1_converter
+
+xxd -i tf_files/retrained_graph.tflite > tf_files/retrained_graph.h
+
+
+tf_files/license_plates/Indiana/fe9b73e6ba94ef.bmp
+
+
+xxd -i fe9b73e6ba94ef.bmp > fe9b73e6ba94ef.h
