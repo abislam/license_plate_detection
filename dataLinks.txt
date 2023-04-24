@@ -1,0 +1,3 @@
+https://www.kaggle.com/datasets/tolgadincer/us-license-plates?select=data
+
+https://www.kaggle.com/datasets/mrugankray/license-plates

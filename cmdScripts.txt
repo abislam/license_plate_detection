@@ -1,0 +1,8 @@
+py -m scripts.retrain --bottleneck_dir=tf_files/bottlenecks --how_many_training_steps=500 --model_dir=tf_files/models/ --summaries_dir=tf_files/training_summaries/mobilenet_0.25_128 --output_graph=tf_files/retrained_graph.pb --output_labels=tf_files/retrained_labels.txt --architecture=mobilenet_0.25_128 --image_dir=tf_files/license_plates
+
+TEST---------------
+py -m scripts.label_image --graph=tf_files/retrained_graph.pb --input_height=128 --input_width=128 --image=tf_files/license_plates/Indiana/4b7bb12ef37aa1.jpg
+
+py -m scripts.label_image --graph=tf_files/retrained_graph.pb --input_height=128 --input_width=128 --image=test_files/indianaTest1.jpg
+
+py -m scripts.label_image --graph=tf_files/retrained_graph.pb --input_height=128 --input_width=128 --image=test_files/newYorkTest1.jpg
