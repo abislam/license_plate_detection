@@ -1,3 +1,15 @@
+# Project Overview - Embedded Systems Application with IMX RT1060 EVK 
+
+This repo retrains the "TensorFlow for poets 2" with a license plate dataset to identify which state each image belongs to.
+
+Hardware used for Project:
+- IMX RT1060 EVK Board
+
+Software used for Project:
+- MCUXpresso IDE
+- Python
+- TensorFlow
+
 # Overview
 
 This repo contains code for the "TensorFlow for poets 2" series of codelabs.
@@ -17,4 +29,6 @@ This repo contains simplified and trimmed down version of tensorflow's example i
 * The Tensorflow Mobile version, in `android/tfmobile`, comes from [tensorflow/examples/android/](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/android).
 
 The `scripts` directory contains helpers for the codelab. Some of these come from the main TensorFlow repository, and are included here so you can use them without also downloading the main TensorFlow repo (they are not part of the TensorFlow `pip` installation).
+
+
 
