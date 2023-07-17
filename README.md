@@ -9,8 +9,35 @@ Software used for Project:
 - MCUXpresso IDE
 - Python
 - TensorFlow
+# Sample Results
+Indiana/Wyoming
+![](results/indiana_wyoming.jpg)
+  
+NewYork/Pennsylvania/Oklahoma
 
-# Overview
+![](results/newyork_pennsylvania_oklahoma.jpg)
+# Sample Test Files
+Indiana
+
+![](test_files/indianaTest1.jpg)
+
+NewYork
+
+![](test_files/newyorkTest1.jpg)
+
+Oklahoma
+
+![](test_files/oklahomaTest1.jpg)
+
+Pennsylvania
+
+![](test_files/pennsylvaniaTest1.jpg)
+
+Wyoming
+
+![](test_files/wyomingTest1.jpg)
+
+# TensorFlow Overview
 
 This repo contains code for the "TensorFlow for poets 2" series of codelabs.
 
